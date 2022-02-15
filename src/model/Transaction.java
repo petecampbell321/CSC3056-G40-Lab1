@@ -1,3 +1,4 @@
+package model;
 import java.util.Date;
 
 public class Transaction {
@@ -34,6 +35,10 @@ public class Transaction {
 
 	public void setTransactionDate(Date transactionDate) {
 		this.transactionDate = transactionDate;
+	}
+	
+	public String toString() {
+		return accountNumber + ", " + transactionAmount + ", " + transactionDate;
 	}
 	
 	

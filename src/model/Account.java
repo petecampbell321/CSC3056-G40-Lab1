@@ -1,3 +1,4 @@
+package model;
 import java.util.Date;
 
 public class Account {
@@ -44,6 +45,9 @@ public class Account {
 
 	public void setAccountOpeningDate(Date accountOpeningDate) {
 		this.accountOpeningDate = accountOpeningDate;
+	}
+	public String toString() {
+		return accountNumber + ", " + usernameOfAccountHolder + ", " + accountType + ", " + accountOpeningDate;
 	}
 }
 

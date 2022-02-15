@@ -1,3 +1,4 @@
+package model;
 
 public class User {
 	private String username;
@@ -44,5 +45,9 @@ public class User {
 	}
 	public void setMobileNumber(String mobileNumber) {
 		this.mobileNumber = mobileNumber;
+	}
+	
+	public String toString() {
+		return username + ", " + password + ", " + firstName + ", " + lastName + ", " + mobileNumber;
 	}
 }
