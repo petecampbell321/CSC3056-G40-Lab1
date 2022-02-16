@@ -47,6 +47,17 @@ public class UserTests {
 		if (passed) {
 			System.out.println("All TCs passed.");
 		}
+		
+		//using assert's
+		
+		assert testUser.getUsername()== testUsername;
+		assert testUser.getPassword()== testPassword;
+		assert testUser.getFirstName()== testFirstName;
+		assert testUser.getLastName()== testLastName;
+		assert testUser.getMobileNumber()== testMobileNumber;
+		//assert 1==2;
+		
+		System.out.println("All Java assertions in the test suite passed (none failed)");
 	}
 
 }
